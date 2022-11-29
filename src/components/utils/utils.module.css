@@ -1,0 +1,7 @@
+.img_cover {
+  background-size: cover !important;
+}
+
+.link_logo {
+  display: inline-block;
+}
