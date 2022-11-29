@@ -1,0 +1,52 @@
+.sign_container {
+  max-width: 102.4rem;
+  margin: 0 auto;
+}
+.signin_wrapper {
+  margin: 10rem;
+  max-width: 80%;
+}
+.signin_wrapper input {
+  background: #fafafa;
+  border: 1px solid #e9e9e9;
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-weight: 300;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
+
+.signin_wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.signin_wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.signin_wrapper form button {
+  /* align-self: flex-end; */
+}
+
+.error_label {
+  color: #f44336;
+  font-weight: 600;
+  margin: 0 0 10px 0px;
+  font-size: 1.2rem;
+}
+
+.signin_progress {
+  /* height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  align-self: center;
+}

@@ -2,10 +2,11 @@ import { AppBar, Button, Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 import { CityLogo } from "../utils/utils";
 import classes from "./css/AppBar.module.css";
+// import logo from '../../Resources/images/logos/manchester_city_logo.png'
 
 export const Header = () => {
   return (
-    <AppBar position="fixed" className={classes.appBar}>
+    <AppBar className={classes.appBar}>
       <Toolbar
         style={{ display: "flex" }}
         className={classes.appBar_header_logo}

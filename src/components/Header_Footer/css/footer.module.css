@@ -1,0 +1,18 @@
+.footer_bck_blue {
+  background: #0d1831;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 3rem 0px;
+}
+
+.img_cover {
+  margin: 0 auto;
+}
+
+.footer_discl {
+  margin: 1rem 0px;
+}
