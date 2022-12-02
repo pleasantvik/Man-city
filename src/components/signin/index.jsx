@@ -32,7 +32,7 @@ export const Signin = () => {
       .catch((error) => {
         setLoading(false);
 
-        const errorCode = error.code;
+        // const errorCode = error.code;
         const errorMessage = error.message;
 
         showErrorToast(errorMessage);
