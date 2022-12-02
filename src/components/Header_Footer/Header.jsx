@@ -3,8 +3,22 @@ import { Link } from "react-router-dom";
 import { CityLogo } from "../utils/utils";
 import classes from "./css/AppBar.module.css";
 // import logo from '../../Resources/images/logos/manchester_city_logo.png'
+import { app } from "../../firebase";
+import { getAuth, signOut } from "firebase/auth";
+import { showSuccessToast, showErrorToast } from "../utils/utils";
 
-export const Header = () => {
+export const Header = ({ user }) => {
+  const auth = getAuth(app);
+  const logoutHandler = async () => {
+    // auth().signout();
+
+    try {
+      await signOut(auth);
+      showSuccessToast("See you Later");
+    } catch (err) {
+      showErrorToast(err.message);
+    }
+  };
   return (
     <AppBar className={classes.appBar}>
       <Toolbar
@@ -22,9 +36,16 @@ export const Header = () => {
         <Link to="/the_matches">
           <Button color="inherit">Matches</Button>
         </Link>
-        <Link to="/dashboard">
-          <Button color="inherit">Dashboard</Button>
-        </Link>
+        {user && (
+          <Link to="/dashboard">
+            <Button color="inherit">Dashboard</Button>
+          </Link>
+        )}
+        {user && (
+          <Button color="inherit" onClick={logoutHandler}>
+            Logout
+          </Button>
+        )}
       </Toolbar>
     </AppBar>
   );

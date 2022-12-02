@@ -3,8 +3,13 @@
   margin: 0 auto;
 }
 .signin_wrapper {
-  margin: 10rem;
-  max-width: 80%;
+  /* margin: 10rem; */
+  /* max-width: 80%; */
+
+  margin-top: 9.6rem;
+  padding: 2rem;
+  min-height: 70vh;
+  text-align: left;
 }
 .signin_wrapper input {
   background: #fafafa;
@@ -20,19 +25,37 @@
 }
 
 .signin_wrapper h2 {
-  font-size: 2rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
+  text-align: center;
+
+  font-family: "Righteous", cursive;
+  color: var(--color-pry);
+  font-size: 5rem;
 }
 
 .signin_wrapper form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 auto;
+  width: 35rem;
+  /* align-items: flex-start; */
+}
+.signin_wrapper form label {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .signin_wrapper form button {
-  /* align-self: flex-end; */
+  cursor: pointer;
+  background: #0d1831;
+  color: #ffffff;
+  border: 1px solid #0d1831;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  /* align-self: center; */
 }
 
 .error_label {
@@ -49,4 +72,13 @@
   align-items: center; */
 
   align-self: center;
+}
+
+.form_group {
+  margin-bottom: 1rem;
+}
+
+.signin_wrapper form button {
+  width: 100%;
+  padding: 1rem;
 }
