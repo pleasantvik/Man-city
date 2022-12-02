@@ -6,19 +6,20 @@ import classes from "./css/AppBar.module.css";
 import { app } from "../../firebase";
 import { getAuth, signOut } from "firebase/auth";
 import { showSuccessToast, showErrorToast } from "../utils/utils";
+import { logoutHandler } from "../utils/utils";
 
 export const Header = ({ user }) => {
-  const auth = getAuth(app);
-  const logoutHandler = async () => {
-    // auth().signout();
+  // const auth = getAuth(app);
+  // const logoutHandler = async () => {
+  //   // auth().signout();
 
-    try {
-      await signOut(auth);
-      showSuccessToast("See you Later");
-    } catch (err) {
-      showErrorToast(err.message);
-    }
-  };
+  //   try {
+  //     await signOut(auth);
+  //     showSuccessToast("See you Later");
+  //   } catch (err) {
+  //     showErrorToast(err.message);
+  //   }
+  // };
   return (
     <AppBar className={classes.appBar}>
       <Toolbar
