@@ -579,7 +579,7 @@ footer .footer_discl {
          ADMIN
 ===============================*/
 
-.admin_container {
+/* .admin_container {
   margin-top: 96px;
   display: flex;
 }
@@ -620,7 +620,7 @@ footer .footer_discl {
   border-bottom: 1px solid #dbdbdb;
   color: #414141;
   font-size: 40px;
-}
+} */
 
 .select_team_layout .wrapper {
   display: flex;

@@ -1,20 +1,10 @@
+import { AdminLayout } from "../../Hoc/AdminLayout";
 export const Dashboard = (props) => {
-  console.log(props);
   return (
-    <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Dashboard</h1>
-    </>
+    <AdminLayout>
+      <div className="user_dashboard">
+        <div>This is your dashboard</div>
+      </div>
+    </AdminLayout>
   );
 };

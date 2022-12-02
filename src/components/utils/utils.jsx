@@ -1,3 +1,6 @@
+import { app } from "../../firebase";
+import { getAuth, signOut } from "firebase/auth";
+
 import { Link } from "react-router-dom";
 
 import mcityLogo from "../../Resources/images/logos/manchester_city_logo.png";
@@ -51,4 +54,16 @@ export const showSuccessToast = (msg) => {
     progress: undefined,
     theme: "light",
   });
+};
+
+const auth = getAuth(app);
+export const logoutHandler = async () => {
+  // auth().signout();
+
+  try {
+    await signOut(auth);
+    showSuccessToast("See you Later");
+  } catch (err) {
+    showErrorToast(err.message);
+  }
 };
