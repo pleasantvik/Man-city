@@ -1,11 +1,7 @@
 import { List, ListItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import classes from "../../../Hoc/adminLayout.module.css";
-import {
-  showSuccessToast,
-  showErrorToast,
-  logoutHandler,
-} from "../../utils/utils";
+import { logoutHandler } from "../../utils/utils";
 
 export const AdminNav = () => {
   const links = [
